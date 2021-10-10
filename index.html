@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Heros Generation</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        @import url(./style.css);
+    </style>
+</head>
+
+<body>
+    <div id=main-menu>
+        <div class=title>
+            <h1>Generation Heros.js</h1>
+            <p>Soyez créateurs!!</p>
+        </div>
+        <div class=choice-gen>
+            <button onclick="init_gen_story()">Génération de l'histoire</button>
+            <button onclick="init_gen_perso()">Génération du personnage</button>
+        </div>
+        <div class=reload-page>
+            <p>Des problèmes d'affichages ?</p>
+            <button href="#" onclick="location.reload()">Reload page</button>
+        </div>
+    </div>
+    <!--Numéro de version-->
+    <div class="version">
+        Feat: the page exists<br>
+        <u>Version</u> : 0.0.1 - 10.10.2021
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>

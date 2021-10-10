@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: fill;
+    color: white;
+    background-color: rgb(25, 25, 118);
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.version {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+    color: white;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+#main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    position: fixed;
+    top: 20%;
+    animation: title-animation 5s infinite ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes title-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0.8rem);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.title h1 {
+    font-size: 7rem;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    filter: drop-shadow(1px 1px 0 black);
+}
+
+.choice-gen {
+    position: fixed;
+    top: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-gen button {
+    border-radius: 0.5rem;
+    border: solid;
+    border-color: white;
+    margin: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition-duration: .2s;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.reload-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    font-size: .8rem;
+    margin: 0rem;
+    bottom: 3%;
+}
+
+.reload button {
+    margin: 1rem;
+    border-radius: 0.2rem;
+    transition-duration: .2s;
+}
